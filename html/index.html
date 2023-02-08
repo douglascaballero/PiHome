@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fontello/css/fontello.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="/script.js"></script>
+    <link rel="stylesheet" href="/fontello/css/fontello.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -19,10 +19,10 @@
             <a href="#" class="icon-plus" onclick="prueba()"></a>
         </div>
     </header>
-    <div class="left_menu">
+    <div class="left_menu" id="left-menu">
         <div class="home_menu">
-            <a href="#" class="icon-menu"></a>
-            <!--<p>Home Assistant</p>-->
+            <button class="icon-menu" onclick="menudash()"></button>
+            <p id="text-home">Home Assistant</p>
         </div>
         <div class="services_menu">
             <div>
@@ -50,19 +50,7 @@
             </div>
         </div>
     </div>
-    <!--<div class="conten-test">
-        <div class="total-prueba">
-
-        </div>
-        <div class="total-prueba2">
-            
-        </div>
-        <div class="total-prueba3">
-            
-        </div>
-        <div class="total-prueba4">
-            
-        </div>
-    </div>-->
+    <div class="test" id="cuadro" ></div>
+    
 </body>
 </html>
