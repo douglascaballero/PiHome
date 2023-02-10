@@ -1,20 +1,78 @@
 body{
-    background-color: #0B0B0B;
+    background-color: #111111;
+}
+
+.left-notification-menu{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    background-color: #1c1c1c;
+    z-index: 5;
+    display: none;
+}
+
+.content-text-notification{
+    width: 300px;
+    height: 45px;
+    border-bottom: 0.1px solid white;
+    display: inline-block;
+}
+
+.text-notification-menu{
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    top: 10px;
+    left: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.button-left-goback{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    right: 0px;
+    top: 0px;
+    background-color: #1c1c1c;
+    border: hidden;
+    border-radius: 100px;
+    color: white;
+}
+
+.button-left-goback:hover{
+    background-color: gray;
+}
+
+.circule-notifications{
+    position: fixed !important;
+    padding-top: 2px;
+    width: 18px;
+    height: 18px;
+    left: 21.5px;
+    top: 540px;
+    border: hidden;
+    border-radius: 50%;
+    background-color: #ff9800;
+    text-align: center;
+    z-index: 5;
+    font-size: 14px;
 }
 
 .icon-home{
     text-decoration: none;
-    color: white;
+    color: #E1E1E1;
 }
 
 .icon-menu{
     border: 0.1px;
     border-radius: 100%;
     text-decoration: none;
-    background-color: #292929;
-    color: white;
-    height: 40px;
-    width: 40px;
+    background-color: #1c1c1c;
+    color: #E1E1E1;
+    height: 45px;
+    width: 45px;
 }
 
 .icon-menu:hover{
@@ -24,51 +82,57 @@ body{
 .icon-flash{
     left: 2px;
     text-decoration: none;
-    color: white;
+    color: #E1E1E1;
 }
 
 .icon-list-1{
     text-decoration: none;
-    color: white;
+    color: #E1E1E1;
 }
 
 .icon-clone{
     text-decoration: none;
-    color: white;
+    color: #E1E1E1;
 }
 
 .icon-tools{
     text-decoration: none;
-    color: white;
+    color: #E1E1E1;
 }
 
 .icon-cog{
     text-decoration: none;
-    color: white;
+    color: #E1E1E1;
 }
 
 .icon-bell-alt{
+    font-size: 20px;
+    border: 0.1px;
+    border-radius: 100%;
     text-decoration: none;
-    color: white;
+    background-color: #1c1c1c;
+    color: #E1E1E1;
+    height: 40px;
+    width: 40px;
 }
 
 .icon-user{
     text-decoration: none;
-    color: white;
+    color: #E1E1E1;
 }
 
 .icon-search{
     position: fixed;
     left: 94%;
     text-decoration: none;
-    color: white;
+    color: #E1E1E1;
 }
 
 .icon-plus{
     position: fixed;
     left:97%;
     text-decoration: none;
-    color: white;
+    color: #E1E1E1;
 }
 
 
@@ -76,7 +140,7 @@ header{
     margin-left: 40px;
     height: 45px; 
     width: 100%;
-    background-color: #000032;
+    background-color: #101e24;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -86,7 +150,7 @@ header{
 .left_menu{
     width: 40px;
     height: 100%;
-    background-color: #292929;
+    background-color: #1c1c1c;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -96,7 +160,12 @@ header{
     position: relative;
 }
 
+.final-services-menu{
+    top: 40%;
+}
+
 .services_menu{
+    position: relative;
     top: 0px;
     display: block;
     height: max-content;
@@ -108,7 +177,7 @@ header{
 }
 
 .home_menu{
-    height: max-content;
+    height: 45px;
     border-bottom: white solid 1px;
     display: flex;
     position: absolute;
@@ -253,8 +322,8 @@ header{
 .button-user{
     position: absolute;
     left: 2px;
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border: hidden;
     background-color: #b3e5fC;
@@ -263,4 +332,8 @@ header{
 .button-user a{
     text-decoration: none;
     color: black;
+}
+
+.icon-bell-alt:hover{
+    background-color: gray;
 }

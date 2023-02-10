@@ -19,12 +19,18 @@
             <a href="#" class="icon-plus" onclick="prueba()"></a>
         </div>
     </header>
+    <div class="left-notification-menu" id="left-notification-menu">
+        <div class="content-text-notification">
+            <p class="text-notification-menu">Notifications</p>
+            <button class="button-left-goback" onclick="notification_in()">﹤</button>
+        </div>
+    </div>
     <div class="left_menu" id="left-menu">
-        <div class="home_menu">
+        <div class="home_menu" id="home_menu">
             <button class="icon-menu" onclick="menudash()"></button>
             <p id="text-home">Home Assistant</p>
         </div>
-        <div class="services_menu">
+        <div class="services_menu" id="services_menu">
             <div class="summary-menu">
                 <a href="#" class="icon-clone"></a>
                 <p class="text-summary" id="text-summary">Summary</p>
@@ -38,27 +44,29 @@
                 <p class="text-map" id="text-map">Map</p>
             </div>
         </div>
-        <div class="final_menu">
-            <div class="tools-menu">
-                <a href="#" class="icon-tools"></a>
-                <p class="text-tools" id="text-tools">Tools</p>
-            </div>
-            <div class="settings-menu">
-                <a href="#" class="icon-cog"></a>
-                <p class="text-settings" id="text-settings">Settings</p>
+        <div class="final-services-menu">
+            <div class="final_menu" id="final_menu">
+                <div class="tools-menu">
+                    <a href="#" class="icon-tools"></a>
+                    <p class="text-tools" id="text-tools">Tools</p>
+                </div>
+                <div class="settings-menu">
+                    <a href="#" class="icon-cog"></a>
+                    <p class="text-settings" id="text-settings">Settings</p>
+                </div>
             </div>
             <div class="notification-menu">
-                <a href="#" class="icon-bell-alt"></a>
+                <button class="icon-bell-alt" onclick="notification_out()"></button>
                 <p class="text-notification" id="text-notification">Notification</p>
+                <div class="circule-notifications">1</div>
+            </div>
+            <div class="user-menu" id="user_menu">
+                <button class="button-user"><a href="/html/userpage.html">DU</a></button>
+                <p class="text-user" id="text-user">User</p>
             </div>
         </div>
-        <div class="user-menu">
-            <button class="button-user"><a href="/html/userpage.html">DU</a></button>
-            <!---->
-            <p class="text-user" id="text-user">User</p>
-        </div>
     </div>
-    <div class="test" id="cuadro" ></div>
+    <!--<div class="test" id="cuadro" ></div>-->
     
 </body>
 </html>
