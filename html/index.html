@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="/fontello/css/fontello.css">
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/script.js"></script>
-    <title>Document</title>
+    <title>PiHome</title>
 </head>
 <body>
-    <header>
-        <div class="icon-principal">
+    <header id="header">
+        <div class="icon-principal" id="icon-principal">
             <a href="#" class="icon-home"></a>
         </div>
         <div class="icon-extras">
@@ -25,29 +25,37 @@
             <p id="text-home">Home Assistant</p>
         </div>
         <div class="services_menu">
-            <div>
+            <div class="summary-menu">
                 <a href="#" class="icon-clone"></a>
+                <p class="text-summary" id="text-summary">Summary</p>
             </div>
-            <div>
-                <a href="#" class="icon-flash"></a>
+            <div class="energy-menu">
+                <a href="/html/energy.html" target="_blank" class="icon-flash"></a>
+                <p class="text-energy" id="text-energy">Energy</p>
             </div>
-            <div>
+            <div class="maps-menu">
                 <a href="#" class="icon-list-1"></a>
+                <p class="text-map" id="text-map">Map</p>
             </div>
         </div>
         <div class="final_menu">
-            <div>
+            <div class="tools-menu">
                 <a href="#" class="icon-tools"></a>
+                <p class="text-tools" id="text-tools">Tools</p>
             </div>
-            <div>
+            <div class="settings-menu">
                 <a href="#" class="icon-cog"></a>
+                <p class="text-settings" id="text-settings">Settings</p>
             </div>
-            <div>
+            <div class="notification-menu">
                 <a href="#" class="icon-bell-alt"></a>
+                <p class="text-notification" id="text-notification">Notification</p>
             </div>
-            <div>
-                <a href="#" class="icon-user"></a>
-            </div>
+        </div>
+        <div class="user-menu">
+            <button class="button-user"><a href="/html/userpage.html">DU</a></button>
+            <!---->
+            <p class="text-user" id="text-user">User</p>
         </div>
     </div>
     <div class="test" id="cuadro" ></div>
